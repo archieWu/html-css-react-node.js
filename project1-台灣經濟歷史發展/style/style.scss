@@ -1,3 +1,5 @@
+@import 'reset';
+
 header {
     background-color: #C4C4C4;
     width: 100%;
@@ -14,25 +16,22 @@ h3 {
 }
 nav {
     background-color: #312F2F;
-}
+    ul {
+        display: flex;
+        padding-left: 1rem;
+        li {
+            padding: 1rem 1.5rem;
+            a {
+                color: rgb(192, 192, 192);
+                font-size: 1.5rem;
+                transition: all 0.5s ease;
+                :hover{
+                    color: white;
+                }
+            }
+        }
 
-nav ul {
-    display: flex;
-    padding-left: 1rem;
-}
-
-nav ul li {
-    padding: 1rem 1.5rem;
-}
-
-nav ul li a {
-    color: rgb(192, 192, 192);
-    font-size: 1.5rem;
-    transition: all 0.5s ease;
-}
-
-nav ul li a:hover{
-    color: white;
+    }
 }
 
 .active {
@@ -53,21 +52,22 @@ section.left, section.right {
     padding: 1rem;
 }
 
-section.right h4 {
-    font-size: 1.5rem;
-    text-align: center;
-}
+
 
 section.right {
     display: flex;
     flex: 1 1 250px;
     align-items: center;
     flex-direction: column;
+    h4 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    p{
+        margin: 1rem 0rem;
+    }
 }
 
-section.right  p{
-    margin: 1rem 0rem;
-}
 
 #curve_chart {
     width: 100%;
