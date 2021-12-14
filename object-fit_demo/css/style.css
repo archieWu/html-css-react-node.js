@@ -1,0 +1,33 @@
+/* globel */
+*{
+	position: relative;
+	box-sizing: border-box;
+}
+
+/* imgbox */
+.imgBox{
+	width: 30%;
+}
+/* 固定比例的內框 */
+.imgBox-inner{
+	width: 100%;
+	padding-top: 75%;
+	border: 1px solid red;
+	position: relative;
+}
+
+/* 定位到上層 */
+.imgBox-fit{
+	border: 1px solid #000;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.imgBox-fit .image{
+	width: 100%;
+	display: block;
+	object-fit: cover;
+	height: inherit;
+}
