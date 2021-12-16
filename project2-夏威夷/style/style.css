@@ -377,6 +377,11 @@ header {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: #ffffff;
+  box-shadow: 3px 3px 5px 1px #cccccc;
 }
 
 header div.logo {
@@ -444,7 +449,7 @@ main section.backImage h3 {
 
 main section.backImage button.start {
   background-color: #3bf0e5;
-  color: #ffffff;
+  color: #000000;
   padding: 1.5rem 2rem;
   font-size: 2rem;
   border: none;
@@ -561,7 +566,7 @@ footer nav ul.text li {
 
 footer nav ul.text li a {
   font-size: 1.75rem;
-  color: #12948C;
+  color: #000000;
 }
 
 footer ul.icons {
