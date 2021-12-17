@@ -499,10 +499,22 @@ main section.second section.cards div.card {
   flex: 1 1 30rem;
 }
 
-main section.second section.cards div.card img {
+main section.second section.cards div.card div.image-container {
+  overflow: hidden;
   width: 15vw;
   height: 15vw;
   border-radius: 50%;
+}
+
+main section.second section.cards div.card div.image-container img {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+main section.second section.cards div.card div.image-container img:hover {
+  transform: scale(1.2);
 }
 
 main section.second section.cards div.card h4 {
